@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Im Restaurant: Essen bestellen — conversație · Germană A1</title>
+    <meta property="og:title" content="Im Restaurant (Conversație A1)">
+    <meta property="og:description" content="Învață să comanzi la restaurant în germană: mâncare, băutură, preț, plată + dialog animat Andreea↔Mihai. Nivel A1.">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#top" class="navbar-logo">ʚଓ Claudia Toth</a>
+        <ul class="navbar-menu">
+            <li><a href="#teorie" onclick="openSection(0)">Teorie</a></li>
+            <li><a href="#dialog" onclick="openSection(1)">🎬 Dialog</a></li>
+            <li><a href="#ex1" onclick="openSection(2)">Ex. 1</a></li>
+            <li><a href="#ex2" onclick="openSection(3)">Ex. 2</a></li>
+            <li><a href="#ex3" onclick="openSection(4)">Ex. 3</a></li>
+            <li><a href="#ex4" onclick="openSection(5)">Ex. 4</a></li>
+            <li><a href="#ex5" onclick="openSection(6)">🗣️ Vorbire</a></li>
+            <li><a href="#flashcards" onclick="openSection(7)">📇 Flashcards</a></li>
+            <li><a href="#verbs" onclick="openSection(8)">🔁 Verbe</a></li>
+            <li><a href="#final-test" onclick="openSection(9)">🎯 Test Final</a></li>
+            <li><a href="conversatie-a1-im-restaurant.pdf" download>📄 PDF</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" id="top">
+        <div class="header">
+            <h1>ʚଓ Im Restaurant</h1>
+            <p class="subtitle">Comandă la restaurant în germană — conversație · Nivel A1</p>
+            <p>Claudia Toth · Conversație A1</p>
+        </div>
+
+        <div class="content">
+            <div class="section" id="teorie">
+                <div class="section-header" onclick="toggleMainSection(0)"><h3>ʚଓ TEORIE</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-0"><div id="theory-container"></div></div>
+            </div>
+
+            <div class="section" id="dialog">
+                <div class="section-header" onclick="toggleMainSection(1)"><h3>ʚଓ 🎬 Dialog animat: Andreea & Mihai</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-1">
+                    <p style="margin-bottom:14px;"><em>Apasă ▶️ Pornește. Bulele apar pe rând, personajul activ „pulsează". Ascultă cum Andreea comandă la restaurantul lui Mihai — vei auzi exact frazele din teorie. Reascultă orice replică cu 🔁.</em></p>
+                    <div id="dialog1-container"></div>
+                </div>
+            </div>
+
+            <div class="section" id="ex1">
+                <div class="section-header" onclick="toggleMainSection(2)"><h3>ʚଓ Übung 1: Vocabular — potrivește mâncarea & băutura</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-2">
+                    <div id="ex1-container"></div>
+                    <div class="btn-container"><button class="btn btn-check" onclick="checkExercise(1)">✓ Verifica</button><button class="btn btn-reset" onclick="resetExercise(1)">↻ Reseteaza</button></div>
+                    <div class="score" id="score-1"></div>
+                </div>
+            </div>
+
+            <div class="section" id="ex2">
+                <div class="section-header" onclick="toggleMainSection(3)"><h3>ʚଓ Übung 2: Articolul corect (der / die / das)</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-3">
+                    <div id="ex2-container"></div>
+                    <div class="btn-container"><button class="btn btn-check" onclick="checkExercise(2)">✓ Verifica</button><button class="btn btn-reset" onclick="resetExercise(2)">↻ Reseteaza</button></div>
+                    <div class="score" id="score-2"></div>
+                </div>
+            </div>
+
+            <div class="section" id="ex3">
+                <div class="section-header" onclick="toggleMainSection(4)"><h3>ʚଓ Übung 3: La comandă — ein / eine / einen</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-4">
+                    <div id="ex3-container"></div>
+                    <div class="btn-container"><button class="btn btn-check" onclick="checkExercise(3)">✓ Verifica</button><button class="btn btn-reset" onclick="resetExercise(3)">↻ Reseteaza</button></div>
+                    <div class="score" id="score-3"></div>
+                </div>
+            </div>
+
+            <div class="section" id="ex4">
+                <div class="section-header" onclick="toggleMainSection(5)"><h3>ʚଓ Übung 4: Ce spui? — fraza potrivită</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-5">
+                    <div id="ex4-container"></div>
+                    <div class="btn-container"><button class="btn btn-check" onclick="checkExercise(4)">✓ Verifica</button><button class="btn btn-reset" onclick="resetExercise(4)">↻ Reseteaza</button></div>
+                    <div class="score" id="score-4"></div>
+                </div>
+            </div>
+
+            <div class="section" id="ex5">
+                <div class="section-header" onclick="toggleMainSection(6)"><h3>ʚଓ Übung 5: 🗣️ Vorbire — comandă-ți masa</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-6">
+                    <div class="theory-box">
+                        <h4>🗣️ Bestelle dein Essen! / Comandă-ți masa!</h4>
+                        <p>Acesta e cel mai important exercițiu din lecție — și nu se notează. Imaginează-ți că ești la restaurantul lui Mihai și <strong>comandă cu voce tare</strong>: salută, cere meniul, comandă 2-3 lucruri, întreabă prețul și cere nota. Repetă de 2-3 ori, până curge natural.</p>
+                    </div>
+
+                    <div class="theory-box" style="background:#eef2ff;border-color:#6366f1;">
+                        <h4>💡 Tippuri — începuturi de propoziție</h4>
+                        <ul style="margin-left:20px;">
+                            <li><strong>Die Speisekarte, bitte.</strong> <em>(Meniul, vă rog.)</em></li>
+                            <li><strong>Ich möchte … / Ich hätte gern …</strong> <em>(Aș dori … / Aș vrea …)</em></li>
+                            <li><strong>Ich nehme …</strong> <em>(Iau …)</em></li>
+                            <li><strong>Was kostet das?</strong> <em>(Cât costă asta?)</em></li>
+                            <li><strong>Die Rechnung, bitte. Ich zahle mit Karte.</strong> <em>(Nota, vă rog. Plătesc cu cardul.)</em></li>
+                        </ul>
+                    </div>
+
+                    <details class="transcript-details" style="margin-top:16px;">
+                        <summary>🎧 Model de răspuns (ascultă & citește)</summary>
+                        <div style="padding:14px 4px;">
+                            <div class="lesson-audio">
+                                <div class="audio-player">
+                                    <button class="audio-btn" onclick="toggleAudio(event, 'audio-modell')" id="btn-audio-modell">▶</button>
+                                    <audio id="audio-modell" preload="none"><source src="audio/06-modell.mp3" type="audio/mpeg"></audio>
+                                </div>
+                                <span class="lesson-audio-label">🔊 Ascultă modelul Andreei</span>
+                            </div>
+                            <div class="example-box">
+                                <div class="de">Guten Tag! Die Speisekarte, bitte. … Ich möchte eine Suppe und ein Schnitzel. Zum Trinken nehme ich ein Wasser. Was kostet das zusammen? … Die Rechnung, bitte. Ich zahle mit Karte. Vielen Dank!</div>
+                                <div class="ro">Bună ziua! Meniul, vă rog. … Aș dori o supă și un șnițel. De băut iau o apă. Cât costă în total? … Nota de plată, vă rog. Plătesc cu cardul. Mulțumesc mult!</div>
+                            </div>
+                            <div class="andreea-note" style="margin-top:14px;">
+                                <img class="andreea-note-avatar" src="images/annette.png" alt="Annette">
+                                <div class="andreea-note-content">
+                                    <div class="speaker">Annette</div>
+                                    <div class="text">Nu trebuie să comanzi exact ca în model — comandă ce-ți place ȚIE. Dacă reușești să saluți, să comanzi 2-3 lucruri și să ceri nota fără să te oprești, ai reușit. Bravo! 💚</div>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <div class="section" id="flashcards">
+                <div class="section-header" onclick="toggleMainSection(7)"><h3>ʚଓ Flashcards - Învățare prin repetiție</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-7"><div id="flashcards-container"></div></div>
+            </div>
+
+            <div class="section" id="verbs">
+                <div class="section-header" onclick="toggleMainSection(8)"><h3>ʚଓ 🔁 Verb-Konjugation - Verbe esențiale</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-8"><div id="verbs-container"></div></div>
+            </div>
+
+            <div class="section" id="final-test">
+                <div class="section-header" onclick="toggleMainSection(9)"><h3>ʚଓ 🎯 Test Final - Testează-ți cunoștințele!</h3><span class="arrow">▼</span></div>
+                <div class="section-content" id="main-section-9"><div id="final-test-container"></div></div>
+            </div>
+
+            <div class="theory-box" style="text-align: center; margin-top: 40px;">
+                <p style="font-size: 1.3rem; font-weight: bold; color: #065f46;">🎉 Gut gemacht!</p>
+                <p>Acum poți comanda la restaurant în germană: ceri meniul, comanzi mâncare și băutură, întrebi prețul și plătești politicos. Exersează cu voce tare — data viitoare când intri într-un restaurant german, ești pregătit(ă)! Guten Appetit! 🍽️💚</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="theory.js"></script>
+    <script src="dialogs.js?v=1"></script>
+    <script src="exercises.js"></script>
+    <script src="flashcards.js"></script>
+    <script src="verbs.js"></script>
+    <script src="final-test.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
