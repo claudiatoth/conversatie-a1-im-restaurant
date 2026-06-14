@@ -40,7 +40,7 @@ const theoryHTML = `
                 <p style="margin-top:6px;">🇷🇴 Comandă mâncare și băuturi la restaurant. Întreabă prețul și plătește politicos.</p>
             </div>
 
-            <div class="theory-box" style="background:#fef3c7;border-color:#f59e0b;">
+            <div class="theory-box" style="background:#F5F0E8;border-color:#D4A574;">
                 <h4>✍️ Notă despre diacritice</h4>
                 <p>Verificarea e blândă: poți scrie Umlaut-urile corect (<em>die Säfte</em>) sau cu varianta de înlocuire (<em>die Saefte</em>). Ambele sunt acceptate peste tot în lecție.</p>
             </div>
