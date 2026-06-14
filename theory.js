@@ -91,7 +91,7 @@ const theoryHTML = `
                 </tbody>
             </table>
 
-            <div class="theory-box" style="background:#eef2ff;border-color:#6366f1;">
+            <div class="theory-box" style="background:#F5F0E8;border-color:#D4A574;">
                 <h4>➕ Extindere — cuvinte de restaurant</h4>
                 <table class="grammar-table" style="margin-top:6px;">
                     <thead><tr><th>Singular</th><th>Plural</th><th>Traducere RO (sg · pl)</th></tr></thead>
